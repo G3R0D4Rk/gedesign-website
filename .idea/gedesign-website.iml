@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="remixicon" level="application" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="f899db1f-1660-4ee9-8c0b-f21e8bf990e2" />
