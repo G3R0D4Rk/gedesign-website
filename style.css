@@ -38,7 +38,7 @@ nav {
 
 .nav-social{
     font-size: 24px;
-    color: #fff;
+    color: #ccc;
     justify-content: space-between;
     margin: auto;
     display: grid;
@@ -64,19 +64,22 @@ nav {
     width: 0; /* Imposta la larghezza a 0 inizialmente (il sottolineato inizia non visibile) */
     bottom: 0; /* Posiziona il bordo inferiore dell'elemento ::after a 0 dalla parte inferiore dell'elemento padre */
     left: 0; /* Posiziona il bordo sinistro dell'elemento ::after a 0 dalla parte sinistra dell'elemento padre */
-    background-color: #1D4ED8; /* Imposta il colore di sfondo a #1D4ED8, che è un azzurro */
-    transition: all 0.3s ease; /* Applica una transizione a tutte le proprietà con una durata di 0.3 secondi e una funzione di transizione "ease" */
+    background-color: #ccc; /* Imposta il colore di sfondo a #1D4ED8, che è un azzurro */ /* Applica una transizione a tutte le proprietà con una durata di 0.3 secondi e una funzione di transizione "ease" */
 }
 
 .link a:hover::after {
     width: 70%;
 }
 
+i{
+    color: #ccc;
+}
+
 .btn{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #356afc;
+    background-color: #ccc;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -102,12 +105,6 @@ nav {
     max-width: 1000px;
     margin: auto;
     padding: 1rem 2rem;
-}
-
-.blur{
-    position: absolute;
-    box-shadow: 0 0 1000px 50px #356afc;
-    z-index: -100;
 }
 
 header{
@@ -200,7 +197,7 @@ section .header{
 }
 
 .features .card a:hover{
-    color: #1E40AF;
+    color: #ccc;
 }
 
 .sub-header{
@@ -210,14 +207,14 @@ section .header{
     color: #ccc;
 }
 
-.pricing{
+.project{
     margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.pricing .card{
+.project .card{
     padding: 3rem 2rem;
     background-color: #27272A;
     display: flex;
@@ -227,50 +224,50 @@ section .header{
     transition: all 0.3s ease;
 }
 
-.pricing .card:hover{
+.project .card:hover{
     background-color: #323232;
     border-color: #fff;
 }
 
-.pricing .card .content{
+.project .card .content{
     flex: 1;
     margin-bottom: 2rem;
 }
 
-.pricing .card h4{
+.project .card h4{
     margin-bottom: 1rem;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.pricing .card h3{
+.project .card h3{
     color: #fff;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 600;
     border-bottom: 2px dashed #fff;
 }
 
-.pricing .card p{
+.project .card p{
     color: #fff;
     margin-bottom: 0.75rem;
 }
 
-.pricing .card p i{
+.project .card p i{
     color: #ccc;
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
-.pricing .card button{
+.project .card button{
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
 }
 
-.pricing .card button:hover{
+.project .card button:hover{
     background-color: #1E40AF;
     border-color: #1E40AF;
 }
@@ -282,6 +279,10 @@ section .header{
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
+}
+
+.copyright a{
+    color: #ccc;
 }
 
 /*Responsive*/
@@ -298,7 +299,7 @@ section .header{
     .features{
         grid-template-columns: repeat(2, 1fr);
     }
-    .pricing{
+    .project{
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -310,7 +311,7 @@ section .header{
     .features{
         grid-template-columns: repeat(1, 1fr);
     }
-    .pricing{
+    .project{
         grid-template-columns: repeat(1, 1fr);
     }
 }
