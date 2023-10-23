@@ -10,7 +10,6 @@ function scrollToElement(elementSelector, instance = 0){
 
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
-const link3 = document.getElementById("link3");
 
 link1.addEventListener('click', () =>{
     scrollToElement('.header');
@@ -18,9 +17,6 @@ link1.addEventListener('click', () =>{
 link2.addEventListener('click', () =>{
     // Scroll to the secondo element with "header" class
     scrollToElement('.header', 1);
-});
-link3.addEventListener('click', () =>{
-    scrollToElement('.column');
 });
 
 /*Pixel Background*/
