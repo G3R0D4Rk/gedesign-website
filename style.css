@@ -34,6 +34,7 @@ nav {
 .nav-logo {
     font-size: 50px; /* Dimensione del testo */
     color: #fff; /* Colore del testo */
+    display: grid;
 }
 
 .nav-social{
@@ -286,32 +287,49 @@ section .header{
 }
 
 /*Responsive*/
-@media (width < 900px){
-    .nav-links{
+/* Quando la larghezza del dispositivo è inferiore a 900px */
+@media (width < 900px) {
+    .nav-logo {
+        text-align: center; /* Allinea il testo al centro orizzontalmente */
+        white-space: nowrap; /* Evita il riavvolgimento del testo (no wrap) */ /* Aggiunge "..." se il testo è troppo lungo */
+        font-size: 2.50rem;
         grid-template-columns: 1fr 200px;
+        margin-left: -2rem;
     }
-    header{
-        grid-template-columns: repeat(1, 1fr);
+    .nav-links{
+        display: none;
     }
-    header .image{
-        grid-area: 1/1/2/2;
+    header {
+        grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
     }
-    .features{
-        grid-template-columns: repeat(2, 1fr);
+    .features {
+        grid-template-columns: repeat(2, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
     }
-    .project{
-        grid-template-columns: repeat(2, 1fr);
+    .project {
+        grid-template-columns: repeat(2, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
     }
 }
 
-@media (width < 600px){
-    header .image::before{
+/* Quando la larghezza del dispositivo è inferiore a 600px */
+@media (width < 600px) {
+    .nav-logo {
+        text-align: center; /* Allinea il testo al centro orizzontalmente */
+        white-space: nowrap; /* Evita il riavvolgimento del testo (no wrap) */ /* Aggiunge "..." se il testo è troppo lungo */
+        font-size: 2.50rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: -2rem;
+    }
+    .nav-social{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 1rem;
+    }
+    .nav-links{
         display: none;
     }
-    .features{
-        grid-template-columns: repeat(1, 1fr);
+    .features {
+        grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
     }
-    .project{
-        grid-template-columns: repeat(1, 1fr);
+    .project {
+        grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
     }
 }
