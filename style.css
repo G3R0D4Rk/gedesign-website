@@ -297,7 +297,7 @@ section .header{
         grid-template-columns: repeat(2, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
     }
     .project {
-        grid-template-columns: repeat(2, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
+        grid-template-columns: repeat(1fr, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
     }
 }
 @media (width < 600px) {
