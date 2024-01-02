@@ -279,7 +279,7 @@ section .header{
 
 /*Responsive*/
 /* Quando la larghezza del dispositivo è inferiore a 900px */
-@media (width < 900px) {
+@media (width < 1200px) {
     .nav-logo {
         text-align: center; /* Allinea il testo al centro orizzontalmente */
         white-space: nowrap; /* Evita il riavvolgimento del testo (no wrap) */ /* Aggiunge "..." se il testo è troppo lungo */
@@ -304,7 +304,7 @@ section .header{
         grid-template-columns: repeat(1, 1fr);
     }
 }
-@media (width < 600px) {
+@media (width < 800px) {
     .nav-logo {
         text-align: center; /* Allinea il testo al centro orizzontalmente */
         white-space: nowrap; /* Evita il riavvolgimento del testo (no wrap) */ /* Aggiunge "..." se il testo è troppo lungo */
@@ -324,9 +324,13 @@ section .header{
     }
     .project{
         width: calc(50% - 20px);
-        grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .project .card{
-        grid-template-columns: repeat(1, 1fr);
+        flex: 0 0 calc(50% - 20px); /* Dividi in due colonne con margine */
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 }
