@@ -217,7 +217,6 @@ section .header{
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
-    display: block;
 }
 
 .project .card:hover{
@@ -318,6 +317,7 @@ section .header{
         grid-template-columns: repeat(1, 1fr);
     }
     .project .card {
+        display: block;
         padding: 0.5rem; /* Riduci il padding */
         border-radius: 10px; /* Riduci il raggio del bordo */
     }
