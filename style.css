@@ -251,12 +251,12 @@ section .header{
 }
 
 .project .card p{
+    font-weight: 100;
     color: #ccc;
 }
 
 .project .card p i{
     color: #ccc;
-    font-size: 1.0rem;
     margin-right: 0.3rem;
 }
 
@@ -320,7 +320,7 @@ section .header{
         grid-template-columns: repeat(1, 1fr);
     }
     .project .card {
-        padding: 0.2rem; /* Riduci il padding */
+        padding: 0rem; /* Riduci il padding */
         border-radius: 7px; /* Riduci il raggio del bordo */
     }
 }
