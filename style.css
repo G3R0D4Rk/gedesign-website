@@ -86,7 +86,7 @@ i{
 }
 
 .container-glass {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto auto 5rem;
     padding: 1rem;
     background: #3232322B;
@@ -217,6 +217,7 @@ section .header{
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
+    display: block;
 }
 
 .project .card:hover{
@@ -230,9 +231,9 @@ section .header{
 }
 
 .project .card .content img{
-    text-align: center;
-    width: 24rem;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
+    width: 23rem;
 }
 
 .project .card h4{
@@ -295,7 +296,7 @@ section .header{
         grid-template-columns: repeat(2, 1fr); 
     }
 }
-@media (width < 800px) {
+@media (width < 900px) {
     .nav-logo {
         text-align: center;
         white-space: nowrap;
@@ -316,7 +317,8 @@ section .header{
     .project{
         grid-template-columns: repeat(1, 1fr);
     }
-    .project .card{
-        width: calc(20% - 20px)
+    .project .card {
+        padding: 0.5rem; /* Riduci il padding */
+        border-radius: 10px; /* Riduci il raggio del bordo */
     }
 }
