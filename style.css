@@ -4,11 +4,11 @@
     margin: 0;
     outline: none;
     border: none;
-    box-sizing: border-box; /* Imposta il box-sizing a border-box per tutti gli elementi, in modo che il padding e il bordo non influiscano sul calcolo delle dimensioni */
+    box-sizing: border-box;
 }
 
 a {
-    text-decoration: none; /* Imposta il valore "none" per la proprietà "text-decoration" per rimuovere la sottolineatura dai link */
+    text-decoration: none;
 }
 
 body {
@@ -18,19 +18,19 @@ body {
 }
 
 nav {
-    max-width: 1920px; /* Larghezza massima della barra di navigazione */
-    margin: auto; /* Centra orizzontalmente la barra di navigazione nella pagina */
+    max-width: 1920px;
+    margin: auto;
     margin-bottom: 2rem;
-    padding: 1rem 4rem; /* Spaziatura interna con 2rem in alto e in basso, 1rem a sinistra e a destra */
-    display: flex; /* Utilizza il layout flessibile (flex) per il contenuto all'interno della barra di navigazione */
-    align-items: center; /* Allinea gli elementi verticalmente al centro della barra di navigazione */
-    justify-content: space-between; /* Distribuisci uniformemente gli elementi orizzontalmente, spaziandoli tra loro */
-    gap: 2rem; /* Aggiunge uno spazio di 2rem tra gli elementi della barra di navigazione */
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem; 
 }
 
 .nav-logo {
-    font-size: 50px; /* Dimensione del testo */
-    color: #fff; /* Colore del testo */
+    font-size: 50px;
+    color: #fff;
     display: grid;
 }
 
@@ -43,26 +43,24 @@ nav {
 }
 
 .nav-links {
-    list-style: none; /* Rimuove i punti elenco predefiniti dalla lista */
-    display: flex; /* Utilizza il layout flessibile (flex) per gli elementi all'interno della lista */
-    align-items: center; /* Allinea verticalmente gli elementi al centro della lista */
-    gap: 3rem; /* Aggiunge uno spazio di 3rem tra gli elementi della lista */
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    gap: 3rem; 
 }
 
 .link a {
-    position: relative; /* Imposta la posizione relativa per gli elementi <a> all'interno degli elementi con classe .link */
-    padding-bottom: 0.75rem; /* Aggiunge spazio inferiore di 0.75rem (pixel o unità di misura specificata) per separare i link dagli altri contenuti */
-    color: #fff; /* Imposta il colore del testo dei link su #fff, che rappresenta il colore bianco */
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
 }
-
-/* Stile per il selettore ::after degli elementi <a> all'interno degli elementi con classe .link */
 .link a::after {
-    position: absolute; /* Imposta la posizione assoluta per l'elemento ::after */
-    height: 2px; /* Imposta l'altezza a 2 pixel */
-    width: 0; /* Imposta la larghezza a 0 inizialmente (il sottolineato inizia non visibile) */
-    bottom: 0; /* Posiziona il bordo inferiore dell'elemento ::after a 0 dalla parte inferiore dell'elemento padre */
-    left: 0; /* Posiziona il bordo sinistro dell'elemento ::after a 0 dalla parte sinistra dell'elemento padre */
-    background-color: #ccc; /* Imposta il colore di sfondo a #1D4ED8, che è un azzurro */ /* Applica una transizione a tutte le proprietà con una durata di 0.3 secondi e una funzione di transizione "ease" */
+    position: absolute;
+    height: 2px;
+    width: 0; 
+    bottom: 0;
+    left: 0;
+    background-color: #ccc; 
 }
 
 .link a:hover::after {
@@ -208,8 +206,8 @@ section .header{
 .project{
     margin-top: 4rem;
     margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    grid-template-columns: repeat(2fr, 1fr);
     gap: 2rem;
 }
 
@@ -278,11 +276,10 @@ section .header{
 }
 
 /*Responsive*/
-/* Quando la larghezza del dispositivo è inferiore a 900px */
 @media (width < 1200px) {
     .nav-logo {
-        text-align: center; /* Allinea il testo al centro orizzontalmente */
-        white-space: nowrap; /* Evita il riavvolgimento del testo (no wrap) */ /* Aggiunge "..." se il testo è troppo lungo */
+        text-align: center;
+        white-space: nowrap;
         font-size: 2.00rem;
         grid-template-columns: 1fr 200px;
         margin-left: -2rem;
@@ -291,14 +288,14 @@ section .header{
         display: none;
     }
     header {
-        grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
+        grid-template-columns: repeat(1, 1fr);
     }
     .features {
-        grid-template-columns: repeat(2, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
+        grid-template-columns: repeat(2, 1fr);
     }
     .project {
         width: calc(50% - 20px);
-        grid-template-columns: repeat(1fr, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
+        grid-template-columns: repeat(1fr, 1fr); 
     }
     .project .card{
         grid-template-columns: repeat(1, 1fr);
@@ -306,8 +303,8 @@ section .header{
 }
 @media (width < 800px) {
     .nav-logo {
-        text-align: center; /* Allinea il testo al centro orizzontalmente */
-        white-space: nowrap; /* Evita il riavvolgimento del testo (no wrap) */ /* Aggiunge "..." se il testo è troppo lungo */
+        text-align: center;
+        white-space: nowrap;
         font-size: 2.00rem;
         grid-template-columns: repeat(1, 1fr);
         margin-left: -2rem;
@@ -320,16 +317,18 @@ section .header{
         display: none;
     }
     .features {
-        grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
+        grid-template-columns: repeat(1, 1fr);
     }
     .project{
+        padding: auto;
         width: calc(50% - 20px);
         grid-template-columns: repeat(1, 1fr);
         flex-direction: row;
         flex-wrap: wrap;
     }
     .project .card{
-        flex: 0 0 calc(50% - 20px); /* Dividi in due colonne con margine */
+        padding: auto;
+        flex: 0 0 calc(50% - 20px);
         margin-right: 20px;
         margin-bottom: 20px;
     }
