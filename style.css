@@ -296,7 +296,7 @@ section .header{
         grid-template-columns: repeat(2, 1fr); 
     }
 }
-@media (width < 900px) {
+@media (width < 800px) {
     .nav-logo {
         text-align: center;
         white-space: nowrap;
