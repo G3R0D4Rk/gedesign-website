@@ -88,7 +88,7 @@ i{
 .container-glass {
     max-width: 900px;
     margin: auto auto 5rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
     background: #3232322B;
     border-radius: 16px;
     box-shadow: 0 4px 30px #00000019;
@@ -207,8 +207,8 @@ section .header{
     margin-top: 1rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
 }
 
 .project .card{
@@ -225,14 +225,14 @@ section .header{
 }
 
 .project .card .content{
-    flex: 1;
     margin-bottom: 1rem;
+    display: inline-block;
 }
 
 .project .card .content img{
     text-align: center;
     width: 24rem;
-    flex: 1;
+    display: inline-block;
 }
 
 .project .card h4{
@@ -251,12 +251,12 @@ section .header{
 }
 
 .project .card p{
-    color: #fff;
+    color: #ccc;
 }
 
 .project .card p i{
     color: #ccc;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin-right: 0.3rem;
 }
 
@@ -315,5 +315,8 @@ section .header{
     }
     .project{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .project .card{
+        padding: 0.5rem;
     }
 }
