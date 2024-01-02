@@ -319,8 +319,4 @@ section .header{
     .project{
         grid-template-columns: repeat(1, 1fr);
     }
-    .project .card {
-        padding: 0rem; /* Riduci il padding */
-        border-radius: 7px; /* Riduci il raggio del bordo */
-    }
 }
