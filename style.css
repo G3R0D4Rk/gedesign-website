@@ -317,8 +317,7 @@ section .header{
         grid-template-columns: repeat(1, 1fr);
     }
     .project .card {
-        display: block;
-        padding: 0.5rem; /* Riduci il padding */
-        border-radius: 10px; /* Riduci il raggio del bordo */
+        padding: 0.2rem; /* Riduci il padding */
+        border-radius: 7px; /* Riduci il raggio del bordo */
     }
 }
