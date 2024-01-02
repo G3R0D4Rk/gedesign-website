@@ -314,6 +314,7 @@ section .header{
         grid-template-columns: repeat(1, 1fr);
     }
     .project{
+        align-items: center;
         grid-template-columns: repeat(1, 1fr);
     }
     .project .card {
