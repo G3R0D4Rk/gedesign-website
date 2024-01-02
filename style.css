@@ -86,7 +86,7 @@ i{
 }
 
 .container-glass {
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto auto 5rem;
     padding: 1rem 2rem;
     background: #3232322B;
@@ -204,10 +204,10 @@ section .header{
 }
 
 .project{
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
-    display: flex;
-    grid-template-columns: repeat(2fr, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -294,11 +294,7 @@ section .header{
         grid-template-columns: repeat(2, 1fr);
     }
     .project {
-        width: calc(50% - 20px);
-        grid-template-columns: repeat(1fr, 1fr); 
-    }
-    .project .card{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 @media (width < 800px) {
@@ -320,16 +316,6 @@ section .header{
         grid-template-columns: repeat(1, 1fr);
     }
     .project{
-        padding: auto;
-        width: calc(50% - 20px);
         grid-template-columns: repeat(1, 1fr);
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .project .card{
-        padding: 0rem 0rem;
-        flex: 0 0 calc(50% - 20px);
-        margin-right: 20px;
-        margin-bottom: 20px;
     }
 }
