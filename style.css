@@ -212,10 +212,8 @@ section .header{
 }
 
 .project .card{
-    padding: 3rem 2rem;
+    padding: 1rem;
     background-color: #27272A;
-    display: flex;
-    flex-direction: column;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
