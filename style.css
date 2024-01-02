@@ -296,7 +296,7 @@ section .header{
     .features {
         grid-template-columns: repeat(2, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
     }
-    .project {
+    .project .card{
         grid-template-columns: repeat(1fr, 1fr);  /* Imposta due colonne con larghezza 1fr ciascuna */
     }
 }
@@ -318,7 +318,7 @@ section .header{
     .features {
         grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
     }
-    .project {
+    .project .card{
         grid-template-columns: repeat(1, 1fr);  /* Imposta una singola colonna con larghezza 1fr */
     }
 }
