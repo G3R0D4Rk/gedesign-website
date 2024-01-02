@@ -232,7 +232,7 @@ section .header{
 .project .card .content img{
     display: block;
     margin: 0 auto;
-    width: 23rem;
+    width: 20rem;
 }
 
 .project .card h4{
