@@ -364,6 +364,12 @@ section .header{
     .nav-links{
         display: none;
     }
+    .nav-buttom{
+        display: none;
+    }
+    .select{
+        display: none;
+    }
     .lang{
         display: none;
     }
@@ -390,6 +396,12 @@ section .header{
         margin-left: 0.7rem;
     }
     .nav-links{
+        display: none;
+    }
+    .nav-buttom{
+        display: none;
+    }
+    .select{
         display: none;
     }
     .features {
