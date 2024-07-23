@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --arrow-bg: #27272A;
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: white;
+    --select-bg: #3232322B;
+}
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +27,7 @@ body {
 nav {
     max-width: 1920px;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     padding: 1rem 4rem;
     display: flex;
     align-items: center;
@@ -46,7 +53,79 @@ nav {
     list-style: none;
     display: flex;
     align-items: center; 
-    gap: 3rem; 
+    gap: 2rem; 
+}
+
+.nav-buttom {
+    outline: 0;
+    margin: 0;
+    text-align: center;
+    font: inherit;
+    color: white; /* Assicura che il testo sia bianco */
+    appearance: none;
+    border: 0;
+    width: 10rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background: var(--select-bg) 3em;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.nav-buttom::-ms-expand {
+    display: none;
+}
+
+.nav-buttom:focus {
+    outline: none;
+}
+
+.nav-buttom:hover {
+    border-color: #fff;
+}
+
+.select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 9rem;
+    padding: 1rem 0.5rem 1rem 1rem;
+    margin: 0;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: white;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    &::-ms-expand {
+        display: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.select:hover {
+    box-shadow: 0rem 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.377);
+}
+
+.select option {
+    background-color: var(--option-bg);
+    color: white;
+    padding: 1rem;
+}
+
+.icon-option {
+    display: flex;
+    align-items: center;
+}
+
+.icon-option i {
+    margin-right: 8px;
 }
 
 .link a {
@@ -132,7 +211,7 @@ header .content h1 span{
 }
 
 header .content p{
-    margin-bottom: 1rem;
+
     color: #ccc;
 }
 
@@ -283,6 +362,9 @@ section .header{
         margin-left: -2rem;
     }
     .nav-links{
+        display: none;
+    }
+    .lang{
         display: none;
     }
     header {

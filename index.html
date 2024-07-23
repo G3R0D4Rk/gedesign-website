@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
@@ -34,21 +38,23 @@
             </a>
         </div>
         <ul class="nav-links">
-            <li id="link1" class="link"><a href="#">/*project*/</a></li>
-            <li id="link2" class="link"><a href="#">/*portfolio*/</a></li>
+            <li class="nav-buttom" id="link1"<a href="#">/*project*/</a></li>
+            <li class="nav-buttom" id="link2"<a href="#">/*portfolio*/</a></li>
             <!-- <li class="link"><a href="file/cv_gero_strada.pdf" target="_blank">/*download_CV*/</a></li> -->
         </ul>
+        <select class="select" id="icon-select">
+            <option value="it" data-icon="ri-earth-line"> italiano</option>
+            <option value="en" data-icon="ri-earth-line"> english</option>
+        </select>
     </nav>
 
 <div class="container-glass">
     <header class="container">
         <div class="content">
-            <h4>"Ogni click, tocco e scroll è una storia da raccontare"</h4>
+            <h4 id="inte">"Ogni click, tocco e scroll è una storia da raccontare"</h4>
             <h1><span>UX/UI Designer</span> & <bold>Front End Developer</bold></h1>
-            <p>
-                Sono un alchimista digitale che trasforma idee in realtà. <br> Attraverso la progettazione centrata sull'utente e lo sviluppo Front End all'avanguardia, creo soluzioni che connettono il bello all'usabilità.
-                Ogni progetto inizia con una profonda immersione nel mondo del cliente.
-            </p>
+            <p id="pargr">
+                Sono un alchimista digitale che trasforma idee in realtà. <br> Attraverso la progettazione centrata sull'utente e lo sviluppo Front End all'avanguardia, creo soluzioni che connettono il bello all'usabilità. Ogni progetto inizia con una profonda immersione nel mondo del cliente.</p>
         </div>
     </header>
 
@@ -57,28 +63,28 @@
             <div class="card">
                 <span><i class="ri-brain-line"></i></span>
                 <h4>UX Design</h4>
-                <p>
+                <p id="pargr2">
                     Progettazione dell'esperienza utente che mette gli utenti al primo posto.
                 </p>
             </div>
             <div class="card">
                 <span><i class="ri-pencil-line"></i></span>
                 <h4>UI Design</h4>
-                <p>
+                <p id="pargr3">
                     Progettazione dell'interfaccia utente che affascina e coinvolge.
                 </p>
             </div>
             <div class="card">
                 <span><i class="ri-code-s-slash-line"></i></span>
                 <h4>Front End</h4>
-                <p>
+                <p id="pargr4">
                     Sviluppo l'interfaccia utente per dare vita al design in modo interattivo.
                 </p>
             </div>
             <div class="card">
                 <span><i class="ri-smartphone-line"></i></span>
                 <h4>Responsive</h4>
-                <p>
+                <p id="pargr5"">
                     Ottimizzazione e adattamento per una perfetta esperienza su tutti i dispositivi.
                 </p>
             </div>
